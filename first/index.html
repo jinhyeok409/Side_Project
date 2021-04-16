@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style-1.css" />
+  </head>
+  <body>
+    <div class="screen-1">
+      <header class="screen__header">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-search"></i>
+      </header>
+
+      <section class="album__section">
+        <div class="album__image">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Hozier_album.jpg/220px-Hozier_album.jpg"
+          />
+        </div>
+        <div class="album__info">
+          <span class="album__info-singer">Hozier</span>
+          <span class="album__info-genre">Indie Rock, Pop</span>
+        </div>
+      </section>
+
+      <section class="button__section">
+        <button class="btn__left">Shuffle</button>
+        <button class="btn__right">
+          <i class="fas fa-heart fa-lg"></i>
+          <span> 443 412 </span>
+        </button>
+      </section>
+
+      <section class="music-list__section">
+        <div class="music">
+          <div class="music__album">
+            <img
+              src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/050/351/81050351_1523237153560_1_600x600.JPG"
+            />
+          </div>
+          <div class="music__info">
+            <span class="music__info-singer"> Anderson.paak </span>
+            <span class="music__info-title"> 'Til It's Over </span>
+          </div>
+          <div class="music__icon">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="music">
+          <div class="music__album">
+            <img
+              src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile6.uf.tistory.com%2Fimage%2F999205395CDA7A3A1BC6AA"
+            />
+          </div>
+          <div class="music__info">
+            <span class="music__info-singer"> Ruel </span>
+            <span class="music__info-title"> Painkiller </span>
+          </div>
+          <div class="music__icon">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="music">
+          <div class="music__album">
+            <img
+              src="data:image/jpeg;base64,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"
+            />
+          </div>
+          <div class="music__info">
+            <span class="music__info-singer"> Anne-Marie </span>
+            <span class="music__info-title"> 2002 </span>
+          </div>
+          <div class="music__icon">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="music">
+          <div class="music__album">
+            <img
+              src="https://lh3.googleusercontent.com/proxy/ZTbkCNmkI7NZvKcsLdCLvBN9vv1aUtF13U08hMnl3HSj26fl10Y96Wb0Oq6gc1hM1jRKqAGqEAfnDiBdJh9EPi6ByZXAKBKkLZqfL2lg6I06NezbvfKFBaEcQCq8uYN4Jd19klM7SwDBtO6g9gi5QLObfJQf7PDlO-W0xvTZYVKUAItWZxDXDni4WIw6gvi34-XWR2WuABikLujtnshaedXLq2YP_Pyvl-weEXW_UUN_VlkfAJ2Y4NNuphlCjB-TLftXf4I4JeII09TltWmhz8L-uXfIK3xRYQ-0kVonJuIOz57h98hZeM0"
+            />
+          </div>
+          <div class="music__info">
+            <span class="music__info-singer"> Lauv </span>
+            <span class="music__info-title"> I Like Me Better </span>
+          </div>
+          <div class="music__icon">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="control__section">
+        <div class="control__bar">
+          <div class="playing__info">
+            <span class="playing__singer"> Hozier </span>
+            <span class="playing__title"> Take me to church </span>
+          </div>
+          <div class="playing__control">
+            <i class="fas fa-step-backward fa-xs"></i>
+            <i class="fas fa-pause fa-sm"></i>
+            <i class="fas fa-step-forward fa-xs"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="screen-2">
+      <header class="screen__header">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </header>
+
+      <section class="music__content">
+        <div class="music__content-album">
+          <img
+            src="https://images.genius.com/67a80685b84a3fe6a948511dc216767a.1000x1000x1.jpg"
+          />
+        </div>
+        <div class="music__content-info">
+          <span class="music__content-title"> Take me to church </span>
+          <span class="music__content-singer"> Hozier </span>
+        </div>
+      </section>
+      <section class="music__controller">
+        <div class="music__time">
+          <div class="music__time-num">
+            <span>0:00</span>
+            <span>3:21</span>
+          </div>
+          <div class="music__black-bar"></div>
+        </div>
+        <div class="music__control-bar">
+          <i class="fas fa-redo fa-sm first"></i>
+          <i class="fas fa-step-backward second"></i>
+          <div>
+            <i class="fas fa-play"></i>
+          </div>
+          <i class="fas fa-step-forward third"></i>
+          <i class="fas fa-random fa-sm fourth"></i>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/c622222fba.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
